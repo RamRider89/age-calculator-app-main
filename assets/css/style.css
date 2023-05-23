@@ -1,0 +1,207 @@
+/**
+ * age-calculator-app-main
+ * Challenge by https://www.frontendmentor.io
+ * Coded by Carlos David Duarte
+ * Email: hola@davdav.tech
+ * */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+#app{
+	font-family: 'Poppins', sans-serif;
+}
+
+#app div.modal-header{
+  border-bottom:none!important;
+}
+
+#app div.modal-content{
+	border-bottom-right-radius: 100px;
+}
+
+#app div.modal-footer{
+	justify-content: flex-start;
+}
+
+#app .form-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+}
+
+#app .form-control{
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  box-shadow: none!important;
+  transition: border-color .25s ease-in-out;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 1%, 64%)!important;
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(0, 1%, 64%)!important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(0, 1%, 64%)!important;
+}
+
+input:focus{
+  border-color:hsl(259, 100%, 65%)!important;
+}
+
+.error{
+  border-color:hsl(0, 100%, 67%)!important;
+  color: hsl(0, 100%, 67%)!important;
+  opacity: 1.0!important;
+}
+
+#app .message{
+  display: block;
+  font-size: 8px;
+  font-weight: 100;
+  opacity: 0.0;
+}
+
+
+#arrow {
+    width: 56px;
+    height: 56px;
+    display: block;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 28px;
+    padding: 12px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+}
+
+#arrow:hover{
+  background-color: hsl(259deg 71.85% 34.82%);
+}
+
+#arrow b{
+	  background-image: url(../images/icon-arrow.svg);
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.flecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#app .results{
+  margin-bottom: -32px;
+}
+
+#app i{
+  font-size: 64px;
+  font-weight: 800;
+  color: hsl(0, 0%, 8%);
+}
+
+#app i b{
+  color: hsl(259, 100%, 65%);
+}
+
+#accordion .card-body {
+  font-size: 12px;
+}
+
+#accordion button{
+  /*color:hsl(259deg 71.85% 34.82%)!important; */
+  color: black!important;
+  font-size: 11px!important;
+  text-decoration: none!important;
+  transition: color .25s ease-in-out;
+}
+
+#accordion button:hover{
+  color: hsl(259deg 71.85% 34.82%)!important;
+}
+
+#accordion i{
+  font-size: 32px;
+  font-weight: 600;
+  color: hsl(0, 0%, 8%);
+  margin-bottom: -20px;
+}
+
+#accordion i b{
+  color: hsl(259, 100%, 65%);
+}
+
+
+.modal-dialog {
+    @media (min-width: 1440px){
+      /*max-width: 700px!important;*/
+    }
+}
+
+@media (min-width: 577px){
+  #arrow {
+        right: 14px;
+    }
+}
+
+@media (max-width: 576px){
+    #app .results{
+      margin-bottom: -28px;
+    }
+
+    #app i{
+      font-size: 54px;
+    }
+
+    #accordion i{
+      font-size: 26px;
+      margin-bottom: -16px;
+    }
+
+    .flecha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+  }
+
+  @media (max-width: 375px){
+    #app .results{
+      margin-bottom: -22px;
+    }
+
+    #app i{
+      font-size: 34px;
+    }
+
+    #accordion i{
+      font-size: 20px;
+      margin-bottom: -12px;
+    }
+  }
+
+
+    .attribution { font-size: 11px; text-align: left; }
+    .attribution a { 
+      color: hsl(259deg 71.85% 34.82%); 
+      text-decoration: none;
+      transition: color .25s ease-in-out;
+    }
+
+    .attribution a:hover { 
+      color: hsl(259, 100%, 65%); 
+    }
