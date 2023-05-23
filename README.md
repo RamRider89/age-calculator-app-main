@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ([https://your-solution-url.com](https://github.com/RamRider89/age-calculator-app-main))
-- Live Site URL: ([https://your-live-site-url.com](https://davdav.tech/mentor/age-calculator-app-main))
+- Solution URL: ([github.com/RamRider89/age-calculator-app-main/](https://github.com/RamRider89/age-calculator-app-main))
+- Live Site URL: ([ramrider89.github.io/age-calculator-app-main/](https://ramrider89.github.io/age-calculator-app-main/))
 
 ## My process
 
@@ -51,15 +51,15 @@ Users should be able to:
 - Bootstrap
 - CSS Grid
 - Mobile-first workflow
-- [Jquery](www.jquery.com) - JS library
-- [Momentjs](https://momentjs.com/) - JS library
-- [Bootstrap](getbootstrap.com/)
+- [Jquery](https://www.jquery.com/) - JS library
+- [Momentjs](https://www.momentjs.com/) - JS library
+- [Bootstrap](https://www.getbootstrap.com/)
 
 
 ## Author
 
 - Website - [Carlos David Duarte](https://www.davdav.tech)
-- Mail - [Mail](hola@davdav.tech)
+- Mail - [hola@davdav.tech](mailto:hola@davdav.tech)
 - Frontend Mentor - [@RamRider89](https://www.frontendmentor.io/profile/RamRider89)
 - Twitter - [@davidgillnn](https://www.twitter.com/davidgillnn)
 - GitHub - [@RamRider89](https://github.com/RamRider89/)
