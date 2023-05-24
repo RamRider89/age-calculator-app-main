@@ -25,8 +25,9 @@ const cases = {
 	},
 	year: {
 		section: 'yearssection',
-		start: 1,
-		end: currentYear
+		start: 0,
+		end: currentYear,
+		trow: 1000
 	}
 }
 
@@ -93,9 +94,18 @@ function calculateAges() {
 	if(validate.day && validate.month && validate.year && validate.dayvsmonth){
 		console.info("Calculating age:");
 
-		let date = moment(new Date(data.year, (data.month - 1), data.day));
-		let diff = moment().diff(date, 'milliseconds');
-  	let duration = moment.duration(diff);
+		let date, diff, duration, yearad;
+
+		/* fix err. year AD 1000 */
+		if (data.year >= cases.year.start && data.year < cases.year.trow) { 
+			date = new Date(Date.UTC(data.year + cases.year.trow),(data.month-1),data.day);
+			date.setUTCFullYear((data.year + cases.year.trow) - cases.year.trow);
+		}else{
+			date = moment(new Date(data.year, (data.month - 1), data.day));
+		}
+		
+		diff = moment().diff(date, 'milliseconds');
+  	duration = moment.duration(diff);
 		
 		let age = {
 			now: {
